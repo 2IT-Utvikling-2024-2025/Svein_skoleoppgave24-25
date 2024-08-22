@@ -1,6 +1,7 @@
 import Foot from './componets/Foot'
 import MainContent from './componets/MainContent'
 import Top from './componets/Top'
+import './index.css'
 
 function App() {
 

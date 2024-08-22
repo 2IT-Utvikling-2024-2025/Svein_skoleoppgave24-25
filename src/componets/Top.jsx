@@ -3,8 +3,8 @@
 export default function Top() {
 
     return (
-        <div className="top">
-            <h1>Svein's Interesser Nettside</h1>
+        <div className="m-96">
+            <h1 className="text-3xl text-center">Svein's Interesser Nettside</h1>
         </div>
     )
 }
