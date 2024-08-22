@@ -1,4 +1,3 @@
-import './App.css'
 import Foot from './componets/Foot'
 import MainContent from './componets/MainContent'
 import Top from './componets/Top'
