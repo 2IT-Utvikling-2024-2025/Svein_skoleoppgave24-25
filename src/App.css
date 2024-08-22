@@ -5,3 +5,9 @@ li {
 summary {
   font-size: x-large;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
