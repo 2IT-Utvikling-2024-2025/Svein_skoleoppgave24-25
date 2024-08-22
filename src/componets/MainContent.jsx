@@ -1,7 +1,7 @@
 export default function MainContent() {
   return (
-    <div className="bg-gradient-to-t to-slate-900 from-zinc-700">
-      <details>
+    <div className="bg-gradient-to-t to-slate-900 from-zinc-700 flex flex-row justify-around">
+      <details className="text-2xl text-white">
         <summary>interesser</summary>
         <div>
             <h3>Mine interesser:</h3>
@@ -15,7 +15,7 @@ export default function MainContent() {
                 </div>
         </div>
       </details>
-      <details>
+      <details className="text-2xl text-white">
         <summary>Projekter</summary>
         <div></div>
       </details>
