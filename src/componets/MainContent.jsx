@@ -1,6 +1,6 @@
 export default function MainContent() {
   return (
-    <div className="main-content">
+    <div className="bg-gradient-to-t to-slate-900 from-zinc-700">
       <details>
         <summary>interesser</summary>
         <div>
