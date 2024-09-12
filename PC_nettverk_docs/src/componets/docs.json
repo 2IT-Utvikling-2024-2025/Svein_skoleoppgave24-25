@@ -3,62 +3,111 @@
     "Chapters": [
         {
             "title": "Planlegging",
-            "sections": [{}]
+            "sections": [
+                {
+                    "title": "Operativt system",
+                    "content": "Jeg startet ved å planlegge hvilket operativt system jeg skulle ha og jeg valgte Windows 11 fordi det har lettere å endre på innstillingene, Jeg oppfyller kravene og er den mest oppdatere versjonen av Windows."
+                },
+                {
+                    "title": "Nettverks plan",
+                    "content": "På starten ble vi delt ut ip adresser og vi fikk 192.168.1.60 til 192.168.1.79.  Siden vi var bare 3 personer i gruppa og vi hadde 19 ip adresser så valgte vi at vi bare deler ut 1 og 1 ip adresse så jeg er 60, Odin er 61 og Håkon er 62."
+                },
+                {
+                    "title": "Navne standard",
+                    "content": "Siden vi alle hadde unike IP adresser så valgte jeg navnestandard hvor det er PC- {De 2 siste numrene i IP adressen}. Så derfor er min PC-60."
+                },
+                {
+                    "title": "Partisjonering",
+                    "content": "Når noen av de andre i klassen kom seg inn på Windows som ikke hadde passord så fant de at disken var sirka 250GB så søkte jeg opp hvor mye bruker Windows 11 som er sirka 60GB og for programvare så tenkte jeg at vi kunne runde av til nærmeste hundre til systemet og resten kan gå til ekstra data."
+                },
+                {
+                    "title": "Windows versjon",
+                    "content": "Under installeringen av Windows 11 senere så måtte jeg velge en Windows versjon, så jeg tenkte Windows 11 pro vil være bra fordi det vil også gjør at maskinen kan bruke Remote desktop."
+                },
+                {
+                    "title": "FTP server",
+                    "content": "Jeg valgte Filezilla fordi jeg har erfaring med både server og klient fra forrige år når vi prøvde servere for FTP serveren."
+                }
+            ]
         },
         {
             "title": "Utføring",
-            "sections": [{
-                "title": "Installering av Windows",
-                "content": "Begynte med å skaffe Windows 11 media installer fra Microsoft nettsiden. Sier ja på eula og trykker på installer til minnepinnen. Når ferdig, tar jeg ut minnepinnen og plugger den inn i lab pc-en og startet opp til minnepinnen ved å trykke Enter tasten når pc-en starter, trykker F8 for start opp menyen og valgte usb generic storage. Så i installerer en endret jeg tastatur språk til norsk så det blir lettere å skrive. Jeg aktiverte ikke Windows og valgte Windows 11 pro Edition fordi det vil si at Windows vil ikke tvinge internett når jeg starter opp senere. Jeg valgte custom install og partisjonerte disken til 100GB for system og 150GB for annen data. Så begynte jeg å installere Windows og ventet til den restartet seg selv."
-            },
-        {
-            "title": "Sette opp Windows 11",
-            "content": "Jeg valgte Norge som region så valgte jeg nei på alle de valgfrie valgene fordi de fleste av dem er om du vil dele informasjon. Når den spurte om internett så trykket jeg «ikke koble til nett». Neste spurte den om jeg ville fortsette med begrenset oppsett og jeg trykket «fortsett med begrenset» fordi lab pc-ene skulle ikke kobles til internett. Den spurte om brukernavn så jeg brukte navn standarden som ble lagd så «PC-60». Så spurte den om passord så jeg bare brukte «skole123» siden det er en lab pc-en. For sikkerhets spørsmål siden jeg måtte ha dem så satt jeg alle til «Drømtorp» og sånn var Windows 11 satt opp."
+            "sections": [
+                {
+                    "title": "Installering av Windows",
+                    "content": "Begynte med å skaffe Windows 11 media installer fra Microsoft nettsiden. Sier ja på eula og trykker på installer til minnepinnen. Når ferdig, tar jeg ut minnepinnen og plugger den inn i lab pc-en og startet opp til minnepinnen ved å trykke Enter tasten når pc-en starter, trykker F8 for start opp menyen og valgte usb generic storage. Så i installerer en endret jeg tastatur språk til norsk så det blir lettere å skrive. Jeg aktiverte ikke Windows og valgte Windows 11 pro Edition fordi det vil si at Windows vil ikke tvinge internett når jeg starter opp senere. Jeg valgte custom install og partisjonerte disken til 100GB for system og 150GB for annen data. Så begynte jeg å installere Windows og ventet til den restartet seg selv."
+                },
+                {
+                    "title": "Sette opp Windows 11",
+                    "content": "Jeg valgte Norge som region så valgte jeg nei på alle de valgfrie valgene fordi de fleste av dem er om du vil dele informasjon. Når den spurte om internett så trykket jeg «ikke koble til nett». Neste spurte den om jeg ville fortsette med begrenset oppsett og jeg trykket «fortsett med begrenset» fordi lab pc-ene skulle ikke kobles til internett. Den spurte om brukernavn så jeg brukte navn standarden som ble lagd så «PC-60». Så spurte den om passord så jeg bare brukte «skole123» siden det er en lab pc-en. For sikkerhets spørsmål siden jeg måtte ha dem så satt jeg alle til «Drømtorp» og sånn var Windows 11 satt opp."
+                },
+                {
+                    "title": "Sette opp IP adresse",
+                    "content": "Jeg åpnet opp Windows 11 innstillingene og trykket på Network og internett. Så gikk jeg på Ethernet å trykke på rediger på IP valg og satt den på manuell. Jeg satt ipv4 på og subnett 255.255.255.0 og IP til 192.168.1.60."
+                },
+                {
+                    "title": "Sette opp nettverk",
+                    "content": "Jeg startet ved se Ethernet portene på pultene og hvilken vi skulle bruke, for oss ble det 4A og 6A. Jeg tok en kort Ethernet kabel og gikk til patch panelet og koblet sammen 4A og 6A. Så plugget vi inn Ethernet adapterne i PC-ene og plugget en nettverkskabel inn i adapteren og jeg koblet inn 4A, mens Odin koblet i 6A på pultene. For å dobbel sjekke at jeg var koblet til så åpnet jeg ledetekst og skrev «ipconfig» som viste at jeg var koblet til. Oppdatering: 11. september så byttet vi hvordan vi gjorde det i patch panelet og vi plugget 4A og 6A i switchen og 5A også siden nå var Håkon her og vi alle kunne koble til hverandre."
+                },
+                {
+                    "title": "Første ping test",
+                    "content": "Når vi var koblet sammen med Ethernet kabler så åpnet vi opp ledetekst og skrev «ping 192.168.1.61» fordi det var Odin sin IP. Hvert ping time-out. Det betyr at den fant noe, men det den fikk ikke svar tilbake."
+                },
+                {
+                    "title": "Sette opp brannmuren for ping",
+                    "content": "Jeg søkte opp «ping firewall rule» og klikket på topp resultatet «How to Allow Ping in Windows Firewall (Client or Server OS)» til https://activedirectorypro.com/allow-ping-windows-firewall/.jeg åpnet «Windows brannmur og avansert sikkerhet» på pc-en også fulgte instruksene og den skrev om en regel i innkommende som heter «File and Printer Sharing (Echo Request – ICMPv4-In)». Jeg fant den, høyre klikket på den og trykket «Enable rule» så fikk jeg Odin til å ping meg igjen for å sjekke at det virket og hvert ping virket. Så på siste 12.september så deaktiverte jeg reglen igjen."
+                },
+                {
+                    "title": "Installering av FTP server",
+                    "content": "Jeg begynte med å planlegge hvilken server så jeg bestemte Filezilla fordi jeg har hatt erfaring med det. Jeg lastet ned serveren og puttet det på en minnepinne. Jeg plugger minnepinnen in i lab pc-en og jeg installerer serveren. Jeg trykker I agree og velger en full install. Jeg installerer det på standard plassering siden da kan jeg ha lagring og system separert og trykker next. Jeg velger å ha serveren som er service så jeg ikke må starte den manuelt hver gang. Jeg setter admin port på 14148 og setter admin passord som skole123 og tillater admin på all nettverks adaptere. Jeg lar admin panelet starte når brukeren logger og trykker install. Installeringen gjør seg ferdig og den gir meg en TLS fingerprint som jeg lagrer til en TXT fil med navn TLS så trykker jeg Close. Den åpner admin panelet og jeg trykker Connect to server, der skriver jeg inn passordet og sjekker av «save the password» og «Auto connect on startup» så trykker OK. Den sier noe om fingerprint og jeg trykker Yes så den kobler til. Det er server mesteparten satt opp."
+                },
+                {
+                    "title": "Sette opp FTP serveren",
+                    "content": "Trykke på server i admin panelet så konfigurer så Users. Der trykker jeg på add og lager en bruker kalt «Test». Jeg skriver «skole123» i passord feltet trykker på add under mountpoints og setter virituel path til «/» og native path til «D:».Så trykker jeg apply og ok."
+                },
+                {
+                    "title": "Sette opp brannmur for FTP server",
+                    "content": "Jeg åpnet «Windows defender brannmur med avansert sikkerhet» og der trykket jeg på innbound rules og add rule på høyre siden. Jeg trykket på port så neste og jeg lot den være på TCP fordi det er protokollen for FTP og bestemte port «21, 49152-65534». 21 fordi det er FTP sin port og 49152 til 65534 for passiv modus som jeg hadde lært forrige år fra masse styr med det. Jeg kalte reglen FTP og når reglen var ferdig så fikk jeg Odin og Håkon til å teste koblingen og de fikk koble til og lese og laste opp filer. Så teste jeg når jeg skrudde av reglen og det gjorde at de ikke kunne få en kobling igjen."
+                }
+            ]
         },
         {
-            "title": "Sette opp IP adresse",
-            "content": "Jeg åpnet opp Windows 11 innstillingene og trykket på Network og internett. Så gikk jeg på Ethernet å trykke på rediger på IP valg og satt den på manuell. Jeg satt ipv4 på og subnett 255.255.255.0 og IP til 192.168.1.60."
-        },
-        {
-            "title": "Sette opp nettverk",
-            "content": "Jeg startet ved se Ethernet portene på pultene og hvilken vi skulle bruke, for oss ble det 4A og 6A. Jeg tok en kort Ethernet kabel og gikk til patch panelet og koblet sammen 4A og 6A. Så plugget vi inn Ethernet adapterne i PC-ene og plugget en nettverkskabel inn i adapteren og jeg koblet inn 4A, mens Odin koblet i 6A på pultene. For å dobbel sjekke at jeg var koblet til så åpnet jeg ledetekst og skrev «ipconfig» som viste at jeg var koblet til. Oppdatering: 11. september så byttet vi hvordan vi gjorde det i patch panelet og vi plugget 4A og 6A i switchen og 5A også siden nå var Håkon her og vi alle kunne koble til hverandre."
-        },
-    {
-        "title": "Første ping test",
-        "content": "Når vi var koblet sammen med Ethernet kabler så åpnet vi opp ledetekst og skrev «ping 192.168.1.61» fordi det var Odin sin IP. Hvert ping time-out. Det betyr at den fant noe, men det den fikk ikke svar tilbake."
-    },
-{
-    "title": "Sette opp brannmuren for ping",
-    "content": "Jeg søkte opp «ping firewall rule» og klikket på topp resultatet «How to Allow Ping in Windows Firewall (Client or Server OS)» til https://activedirectorypro.com/allow-ping-windows-firewall/.jeg åpnet «Windows brannmur og avansert sikkerhet» på pc-en også fulgte instruksene og den skrev om en regel i innkommende som heter «File and Printer Sharing (Echo Request – ICMPv4-In)». Jeg fant den, høyre klikket på den og trykket «Enable rule» så fikk jeg Odin til å ping meg igjen for å sjekke at det virket og hvert ping virket. Så på siste 12.september så deaktiverte jeg reglen igjen."
-},
-{
-    "title": "Installering av FTP server",
-    "content": "Jeg begynte med å planlegge hvilken server så jeg bestemte Filezilla fordi jeg har hatt erfaring med det. Jeg lastet ned serveren og puttet det på en minnepinne. Jeg plugger minnepinnen in i lab pc-en og jeg installerer serveren. Jeg trykker I agree og velger en full install. Jeg installerer det på standard plassering siden da kan jeg ha lagring og system separert og trykker next. Jeg velger å ha serveren som er service så jeg ikke må starte den manuelt hver gang. Jeg setter admin port på 14148 og setter admin passord som skole123 og tillater admin på all nettverks adaptere. Jeg lar admin panelet starte når brukeren logger og trykker install. Installeringen gjør seg ferdig og den gir meg en TLS fingerprint som jeg lagrer til en TXT fil med navn TLS så trykker jeg Close. Den åpner admin panelet og jeg trykker Connect to server, der skriver jeg inn passordet og sjekker av «save the password» og «Auto connect on startup» så trykker OK. Den sier noe om fingerprint og jeg trykker Yes så den kobler til. Det er server mesteparten satt opp."
-},
-{
-    "title": "Sette opp FTP serveren",
-    "content": "Trykke på server i admin panelet så konfigurer så Users. Der trykker jeg på add og lager en bruker kalt «Test». Jeg skriver «skole123» i passord feltet trykker på add under mountpoints og setter virituel path til «/» og native path til «D:».Så trykker jeg apply og ok."
-},
-{
-    "title": "FTP server brannmur"
-}]
+            "title": "Hvordan åpne brannmuren?",
+            "sections": [
+                {
+                    "title": "Hvordan lage en brannmur regel",
+                    "content": "Åpnet opp «Windows defender brannmur med avansert sikkerhet» og velge enten innkommende regler eller utgående regler. Innkommende regler vil være regler for når noen andre prøver å kontakte deg. Utgående regler vil si hva som har lov til å kontakte andre enheter. Når du har valget en av de så vil du se på høyre siden av vindu at det står «Ny regel …», trykk på den og et vindu burde vise seg. I det nye vindu trykk på «Port» siden det er hovedsakelig hva som du vil bruke for å åpne brannmuren for en service så trykker du neste. Der velger du om det er TCP eller UDP, under det finner du et felt som er markert med «Bestemte eksterne». Der skriver du port nummert du skal åpne som du må sikkert søke opp, når du har fått skrevet det inn trykker du neste. Her bestemmer om du skal lukke brannmuren, lukke den hvis koblingen er ikke sikker eller tillatt alt. Jeg velger tillatt alt siden koblingen kommer ikke alltid til å være sikker så trykker jeg neste. Jeg lar alt være sånn det er, men de beskriver på hvilken type nett denne reglen skal gjelde for. Trykk neste og gi den et beskrivende navn og trykk fullfør, gratulerer du har laget en brannmur regel."
+                },
+                {
+                    "title": "Hvordan skru av en brannmur regel",
+                    "content": "Åpnet opp «Windows defender brannmur med avansert sikkerhet» og velge enten innkommende regler eller utgående regler basert på hvilken regel du prøver å skru av, når du har trykket det så må du prøve å finne navnet av reglen i den lange listen. Når du har funnet den så høyre klikker du på den og trykker «deaktiver regel»."
+                },
+                {
+                    "title": "Hvordan skru på en brannmur regel",
+                    "content": "Åpnet opp «Windows defender brannmur med avansert sikkerhet» og velge enten innkommende regler eller utgående regler basert på hvilken regel du prøver å skru på, når du har trykket det så må du prøve å finne navnet av reglen i den lange listen. Når du har funnet den så høyre klikker du på den og trykker «aktiver regel»."
+                }
+                ]
         },
         {
             "title": "Refleksjon",
-            "sections": [{
-                "title": "Hva har jeg lært gjennom denne oppgaven?"
-            },
-        {
-            "title": "Hvordan har min innsats og fokus hvert?"
-        },
-    {
-        "title": "Om jeg skulle utføre denne oppgaven en gang til, er det noe jeg ville ha gjort annerledes?"
-    }]
+            "sections": [
+                {
+                    "title": "Hva har jeg lært gjennom denne oppgaven?",
+                    "content": "Gjennom oppgaven har jeg lært at tidsfrister kan bli kortere og at å lese dokumentasjon hver gang man jobber kan være nyttig."
+                },
+                {
+                    "title": "Hvordan har min innsats og fokus hvert?",
+                    "content": "Jeg har hovedsakelig brukt tiden min på prosjektet, men mens jeg har ventet på ting så har vært og hjulpet andre med problemene de hadde fått. Det kan ha vært at fokuset mitt på mitt eget prosjekt forsvant litt når andre spurte om hjelp med sitt eget."
+                },
+                {
+                    "title": "Om jeg skulle utføre denne oppgaven en gang til, er det noe jeg ville ha gjort annerledes?",
+                    "content": "Hvis jeg skulle ha gjort oppgaven en gang til så ville jeg ha brukt slutten av timen 11.september på å skrive dokumentasjonen."
+                }
+            ]
         },
         {
             "title": "Hjulpet",
-            "content": "Jeg har hjulpet"
+            "content": "I løpet av den tverrfaglige oppgaven så hadde fått hjulpet med BIOS som hadde vært settet til Legacy som gjorde at installasjons minnepinnen ikke ville starte. Hvordan sette en IPv4 adresse på Windows 10 fordi settings appen til 10 er ikke den beste på det og måtte endres fra kontrollpanelet. Hvordan man lager en brannmurs regel og hvilken regel er for å åpne for ping. Hvordan de skulle sette opp en FTP-server med brukere og hvordan de skulle koble til admin Interface av Filezilla serveren og hvilken porter blir brukt for FTP passive mode. Litt om hvordan partisjoner disken."
         }
-
     ]
 }

@@ -3,10 +3,10 @@ import Section from "./Section";
 
 export default function Chapter({chapter}) {
     return (
-        <div className="Chapter">
+        <div className="Chapter" id={chapter.title}>
             <h1>{chapter.title}</h1>
             {chapter.content ? 
-            <h3>{chapter.content}</h3>
+            <p>{chapter.content}</p>
              : 
             <div>
                 {chapter.sections.map((section, index) => (
