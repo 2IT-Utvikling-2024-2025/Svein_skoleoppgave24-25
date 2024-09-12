@@ -3,15 +3,6 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(87,87,89,1) 40%, rgba(110,167,179,1) 100%);
-}
-
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 275px;
 }
 
 .logo {

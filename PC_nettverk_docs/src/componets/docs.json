@@ -1,0 +1,64 @@
+{
+    "title": "KOBLE SAMMEN PCER DOKUMENTASJON",
+    "Chapters": [
+        {
+            "title": "Planlegging",
+            "sections": [{}]
+        },
+        {
+            "title": "Utføring",
+            "sections": [{
+                "title": "Installering av Windows",
+                "content": "Begynte med å skaffe Windows 11 media installer fra Microsoft nettsiden. Sier ja på eula og trykker på installer til minnepinnen. Når ferdig, tar jeg ut minnepinnen og plugger den inn i lab pc-en og startet opp til minnepinnen ved å trykke Enter tasten når pc-en starter, trykker F8 for start opp menyen og valgte usb generic storage. Så i installerer en endret jeg tastatur språk til norsk så det blir lettere å skrive. Jeg aktiverte ikke Windows og valgte Windows 11 pro Edition fordi det vil si at Windows vil ikke tvinge internett når jeg starter opp senere. Jeg valgte custom install og partisjonerte disken til 100GB for system og 150GB for annen data. Så begynte jeg å installere Windows og ventet til den restartet seg selv."
+            },
+        {
+            "title": "Sette opp Windows 11",
+            "content": "Jeg valgte Norge som region så valgte jeg nei på alle de valgfrie valgene fordi de fleste av dem er om du vil dele informasjon. Når den spurte om internett så trykket jeg «ikke koble til nett». Neste spurte den om jeg ville fortsette med begrenset oppsett og jeg trykket «fortsett med begrenset» fordi lab pc-ene skulle ikke kobles til internett. Den spurte om brukernavn så jeg brukte navn standarden som ble lagd så «PC-60». Så spurte den om passord så jeg bare brukte «skole123» siden det er en lab pc-en. For sikkerhets spørsmål siden jeg måtte ha dem så satt jeg alle til «Drømtorp» og sånn var Windows 11 satt opp."
+        },
+        {
+            "title": "Sette opp IP adresse",
+            "content": "Jeg åpnet opp Windows 11 innstillingene og trykket på Network og internett. Så gikk jeg på Ethernet å trykke på rediger på IP valg og satt den på manuell. Jeg satt ipv4 på og subnett 255.255.255.0 og IP til 192.168.1.60."
+        },
+        {
+            "title": "Sette opp nettverk",
+            "content": "Jeg startet ved se Ethernet portene på pultene og hvilken vi skulle bruke, for oss ble det 4A og 6A. Jeg tok en kort Ethernet kabel og gikk til patch panelet og koblet sammen 4A og 6A. Så plugget vi inn Ethernet adapterne i PC-ene og plugget en nettverkskabel inn i adapteren og jeg koblet inn 4A, mens Odin koblet i 6A på pultene. For å dobbel sjekke at jeg var koblet til så åpnet jeg ledetekst og skrev «ipconfig» som viste at jeg var koblet til. Oppdatering: 11. september så byttet vi hvordan vi gjorde det i patch panelet og vi plugget 4A og 6A i switchen og 5A også siden nå var Håkon her og vi alle kunne koble til hverandre."
+        },
+    {
+        "title": "Første ping test",
+        "content": "Når vi var koblet sammen med Ethernet kabler så åpnet vi opp ledetekst og skrev «ping 192.168.1.61» fordi det var Odin sin IP. Hvert ping time-out. Det betyr at den fant noe, men det den fikk ikke svar tilbake."
+    },
+{
+    "title": "Sette opp brannmuren for ping",
+    "content": "Jeg søkte opp «ping firewall rule» og klikket på topp resultatet «How to Allow Ping in Windows Firewall (Client or Server OS)» til https://activedirectorypro.com/allow-ping-windows-firewall/.jeg åpnet «Windows brannmur og avansert sikkerhet» på pc-en også fulgte instruksene og den skrev om en regel i innkommende som heter «File and Printer Sharing (Echo Request – ICMPv4-In)». Jeg fant den, høyre klikket på den og trykket «Enable rule» så fikk jeg Odin til å ping meg igjen for å sjekke at det virket og hvert ping virket. Så på siste 12.september så deaktiverte jeg reglen igjen."
+},
+{
+    "title": "Installering av FTP server",
+    "content": "Jeg begynte med å planlegge hvilken server så jeg bestemte Filezilla fordi jeg har hatt erfaring med det. Jeg lastet ned serveren og puttet det på en minnepinne. Jeg plugger minnepinnen in i lab pc-en og jeg installerer serveren. Jeg trykker I agree og velger en full install. Jeg installerer det på standard plassering siden da kan jeg ha lagring og system separert og trykker next. Jeg velger å ha serveren som er service så jeg ikke må starte den manuelt hver gang. Jeg setter admin port på 14148 og setter admin passord som skole123 og tillater admin på all nettverks adaptere. Jeg lar admin panelet starte når brukeren logger og trykker install. Installeringen gjør seg ferdig og den gir meg en TLS fingerprint som jeg lagrer til en TXT fil med navn TLS så trykker jeg Close. Den åpner admin panelet og jeg trykker Connect to server, der skriver jeg inn passordet og sjekker av «save the password» og «Auto connect on startup» så trykker OK. Den sier noe om fingerprint og jeg trykker Yes så den kobler til. Det er server mesteparten satt opp."
+},
+{
+    "title": "Sette opp FTP serveren",
+    "content": "Trykke på server i admin panelet så konfigurer så Users. Der trykker jeg på add og lager en bruker kalt «Test». Jeg skriver «skole123» i passord feltet trykker på add under mountpoints og setter virituel path til «/» og native path til «D:».Så trykker jeg apply og ok."
+},
+{
+    "title": "FTP server brannmur"
+}]
+        },
+        {
+            "title": "Refleksjon",
+            "sections": [{
+                "title": "Hva har jeg lært gjennom denne oppgaven?"
+            },
+        {
+            "title": "Hvordan har min innsats og fokus hvert?"
+        },
+    {
+        "title": "Om jeg skulle utføre denne oppgaven en gang til, er det noe jeg ville ha gjort annerledes?"
+    }]
+        },
+        {
+            "title": "Hjulpet",
+            "content": "Jeg har hjulpet"
+        }
+
+    ]
+}

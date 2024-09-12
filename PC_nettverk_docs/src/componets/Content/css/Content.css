@@ -1,0 +1,9 @@
+.Chapter {
+    color: bisque;
+    background-color: rgb(39, 50, 50);
+    border-radius: 5px;
+    width: 70vw;
+    padding: 1vh 2vw;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}

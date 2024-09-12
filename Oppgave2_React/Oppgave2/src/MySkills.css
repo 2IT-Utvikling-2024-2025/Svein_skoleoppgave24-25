@@ -1,0 +1,13 @@
+.name {
+    color: rgb(0, 254, 81);
+}
+
+.comp {
+    border: 5px solid rgba(110, 110, 239, 0.795);
+    padding: 10px;
+}
+
+li {
+    color: rgba(56, 245, 245, 0.745);
+    font-size: xx-large;
+}

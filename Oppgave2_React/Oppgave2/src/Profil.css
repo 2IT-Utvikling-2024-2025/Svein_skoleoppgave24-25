@@ -1,0 +1,15 @@
+img {
+    width: 40%;
+    border-radius: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+p {
+    font-size: x-large;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+{
+    "elever": [
+      {
+        "id": 1,
+        "navn": "John Doe",
+        "email": "john.doe@example.com",
+        "plass": "1a"
+      },
+      {
+        "id": 2,
+        "navn": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "plass": "b"
+      },
+      {
+        "id": 3,
+        "navn": "Theo",
+        "email": "jane.smith@example.com",
+        "plass": "c"
+      }
+    ]
+  }
