@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 50vw;
+    border: 1px solid blue;
+    background-color: grey;
+}
+
+.actions {
+    display: flex;
+    gap: 5%;
+}
+button {
+    height: 50%;
+}
+
+select {
+    width: 10vw;
+    padding: 2%;
+    font-size: larger;
+}
+
+.CheckBox {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+}

@@ -1,0 +1,7 @@
+.FormInput {
+    height: 5vh;
+    width: 50vw;
+    border-radius: 20px;
+    padding-left: 2%;
+    font-size: large;
+}
