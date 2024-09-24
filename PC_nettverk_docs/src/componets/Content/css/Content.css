@@ -1,6 +1,7 @@
 .Chapter {
     color: bisque;
     background-color: rgb(39, 50, 50);
+    white-space: pre-line;
     border-radius: 5px;
     width: 70vw;
     padding: 1vh 2vw;
