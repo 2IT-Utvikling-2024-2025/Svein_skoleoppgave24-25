@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "navn": "Wonjoong",
+        "fødselsdato": "2007-03-15",
+        "kjønn": "Man"
+    },
+    {
+        "id": 2,
+        "navn": "Markus",
+        "fødselsdato": "2007-10-12",
+        "kjønn": "Man"
+    },
+    {
+        "id": 3,
+        "navn": "Jørgen",
+        "fødselsdato": "2007-08-28",
+        "kjønn": "Man",
+        "plass": "3a"
+    },
+    {
+        "id": 4,
+        "navn": "Felix",
+        "fødselsdato": "2007-12-06",
+        "kjønn": "Man",
+        "plass": "4a"
+    },
+    {
+        "id": 5,
+        "navn": "Noah",
+        "fødselsdato": "2007-05-11",
+        "kjønn": "Man",
+        "plass": "5a"
+    },
+    {
+        "id": 6,
+        "navn": "Svein",
+        "fødselsdato": "2007-01-09",
+        "kjønn": "Man",
+        "plass": "1b"
+    },
+    {
+        "id": 7,
+        "navn": "Theo",
+        "fødselsdato": "2007-02-02",
+        "kjønn": "Man"
+    },
+    {
+        "id": 8,
+        "navn": "Kevin",
+        "fødselsdato": "2007-06-27",
+        "kjønn": "Man",
+        "plass": "3b"
+    },
+    {
+        "id": 9,
+        "navn": "Andreas",
+        "kaldenavn": "9",
+        "fødselsdato": "2007-09-24",
+        "kjønn": "Man",
+        "plass": "4b"
+    },
+    {
+        "id": 10,
+        "navn": "Nahuel",
+        "kaldenavn": "10",
+        "fødselsdato": "2007-07-18",
+        "kjønn": "Man",
+        "plass": "5b"
+    },
+    {
+        "id": 11,
+        "navn": "Odin",
+        "kaldenavn": "11",
+        "fødselsdto": "2007-11-08",
+        "kjønn": "Man",
+        "plass": "1c"
+    },
+    {
+        "id": 12,
+        "navn": "Håkon",
+        "kaldenavn": "12",
+        "fødselsdato": "2007-04-25",
+        "kjønn": "Man",
+        "plass": "2c"
+    },
+    {
+        "id": 13,
+        "navn": "Filip",
+        "kaldenavn": "13",
+        "fødselsdato": "2007-08-01",
+        "kjønn": "Man",
+        "plass": "3c"
+    },
+    {
+        "id": 14,
+        "navn": "Luz",
+        "kaldenavn": "14",
+        "fødselsdato": "2007-01-21",
+        "kjønn": "Kvinne",
+        "plass": "4c"
+    },
+    {
+        "id": 15,
+        "navn": "Frithoft",
+        "kaldenavn": "15",
+        "fødselsdato": "2007-11-24",
+        "kjønn": "Kvinne",
+        "plass": "5c"
+    }
+]
+
