@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <h1>Klassekart</h1>
+      <h1>Klassekart 2ITA</h1>
       <Kart />
     </div>
   )
