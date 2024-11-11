@@ -8,7 +8,8 @@ export default function Kart() {
 
     return (
         <div className='kart'>
-            <ModularRow data={data} columnBlocks={[{id: 0, val: 1},{id: 1, val: 1},{id: 2, val: 1},{id: 3, val: 1}]} />
+            <VenstreSide />
+            <HøyreSide />
         </div>
     )
 }
