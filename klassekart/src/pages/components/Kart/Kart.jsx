@@ -1,15 +1,13 @@
 import HøyreSide from './HøyreSide'
 import ModularRow from './ModularRow'
 import VenstreSide from './VenstreSide'
-import data from '../../data.json'
 
-export default function Kart() {
-
+export default function Kart({data}) {
 
     return (
         <div className='kart'>
-            <VenstreSide />
-            <HøyreSide />
+            <VenstreSide data={data} />
+            <HøyreSide data={data} />
         </div>
     )
 }

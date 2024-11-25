@@ -1,7 +1,7 @@
-import data from '../../data.json'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
-export default function Høyreside() {
+export default function Høyreside({data}) {
 
     const [items, setItems] = useState([]);
 
@@ -22,19 +22,21 @@ export default function Høyreside() {
         for (let j = 0; j < 3; j++) {
             const index = plasser[i * 3 + j]; 
             if (index < data.length) { 
+                if (data[index]?.name){
                 pulter.push(
-                    <button
+                    <Link
                         key={data[index].id}
-                        onClick={() => window.location.href = `/profile/${data[index].id}`}>
-                        {data[index].navn}
-                    </button>
+                        to={`/profile/${data[index].id}`}>
+                        {data[index].name}
+                    </Link>
                 );
+            }
             }
         }
     }
 
     setItems(pulter)
-    }, [])
+    }, [data])
 
 
     return (

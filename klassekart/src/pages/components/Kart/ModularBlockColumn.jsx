@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 export default function ModularBlockColumn({ data, columns }) {
@@ -9,11 +10,11 @@ export default function ModularBlockColumn({ data, columns }) {
     return (
         <div className='modularBlockColumn' style={{display:"grid", gridTemplateColumns: `repeat(${columns}, 1fr)`}}>
             {data.map((data)=>{
-                                    <button
+                                    <Link
                                     key={data.id}
-                                    onClick={() => window.location.href = `/profile/${data.id}`}>
+                                    to={`/profile/${data.id}`}>
                                     {data.navn}
-                                </button>
+                                </Link>
             })}
         </div>
     )
